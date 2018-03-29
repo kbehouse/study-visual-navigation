@@ -1,6 +1,6 @@
 ## Study icra2017-visual-navigation
 
-This repo is forked from **[https://github.com/zfw1226/icra2017-visual-navigation](https://github.com/zfw1226/icra2017-visual-navigation), please read the original repo first.
+This repo is forked from [https://github.com/zfw1226/icra2017-visual-navigation](https://github.com/zfw1226/icra2017-visual-navigation), please read the original repo first.
 
 
 ## Install and download data 
@@ -42,7 +42,7 @@ python keyboard_agent.py
 
 ## Extract feature and generate resnet_feature 
 
-Decompress the h5 file to images
+Decompress the h5 file save save images to img/ directory (choose scene by ***filename*** variable)
 
 ```bash
 python read_h5_and_save_img.py
@@ -57,6 +57,7 @@ python extract_feature_and_rewriteh5.py
 ## Train model and test model
 
 Train and save model to checkpoints
+(The train scene is from constants.py ***TASK_LIST***)
 ```bash
 python train.py
 ```

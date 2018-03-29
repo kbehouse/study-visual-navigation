@@ -23,12 +23,13 @@ feature_ary = []
 img_dir_name = 'img/' + h5_name[5:-3]
 for i in range(len(f['observation'])):
     img_path = "{}/{:03d}.png".format(img_dir_name, i)
+    print("Extract feature from -> " + img_path)
     feature = get_feature(img_path)
     feature = np.array(feature)
-    print('feature.shape='+ str(feature.shape))
+    # print('feature.shape='+ str(feature.shape))
     # feature.squeeze()
     feature = feature[0,0,:,:]
-    print('feature.shape='+ str(feature.shape))
+    # print('feature.shape='+ str(feature.shape))
     feature_ary.append(feature)
 
 feature_ary = np.array(feature_ary)
