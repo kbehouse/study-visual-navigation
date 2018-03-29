@@ -62,7 +62,7 @@ Train and save model to checkpoints
 python train.py
 ```
 
-Test the model 
+Test the model and save image to evaluate_img/ directory
 ```bash
 python evaluate.py
 ```
